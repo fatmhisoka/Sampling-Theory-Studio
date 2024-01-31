@@ -28,13 +28,6 @@ Sampling_Theory Studio is a desktop application developed by Team 4, consisting 
 
 8. **Resizable UI**: The application's UI is designed to be easily resizable, ensuring a smooth user experience.
 
-## Installation
-
-To run Sampling_Theory Studio, follow these steps:
-
-1. Install Python (version 3.7 or higher) on your system.
-2. Clone the repository `sampling_theory_studio` from [GitHub](https://github.com/team4/sampling_theory_studio).
-3. Launch the application by running the `task2.py` file.
 
 ## Usage
 
