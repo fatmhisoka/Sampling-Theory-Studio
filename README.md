@@ -1,19 +1,42 @@
-# Sampling Theory Studio
+# Sampling_Theory Studio
 
-## Introduction
-Sampling an analog signal is a crucial step for any digital signal processing system. The Nyquist–Shannon sampling theorem guarantees a full recovery of the signal when sampling with a frequency larger than or equal to the bandwidth of the signal (or double the maximum frequency in case of real signals).
+## Overview
+Sampling_Theory Studio is a desktop application developed using PyQt5 Designer and Python. This application allows users to work with signals, perform sampling, and recover the original signal using different frequencies.
 
-## Description
-Develop a desktop application that illustrates the signal sampling and recovery showing the importance and validation of the Nyquist rate. Your application should have the following features:
+## Team Information
+Sampling_Theory Studio is a desktop application developed by Team 4, consisting of the following members:
+- Sondos Mahmoud
+- Fatma Ehab
+- Mai Mohamed
+- Noura Osama
 
-- **Sample & Recover:** Allow the user to load a mid-length signal (around 1000 points length), visualize and sample it via different frequencies, then use the sampled points to recover the original signal using Whittaker–Shannon interpolation formula. Sampling frequency should be shown in either actual frequency or normalized one (with respect to the maximum frequency, i.e. ranges from 0×fmax to 4×fmax for example). You should use three graphs, one for displaying the original signal along with the markers for the sampled points and another one to display the reconstructed signal, and lastly the third one should display the difference between the original signal and the reconstructed one.
+## Features
 
-- **Load & Compose:** The loaded signal can come from a file or a signal mixer/composer in your application. In the signal mixer, the user can add multiple sinusoidal signals of different frequencies and magnitudes. The user can also remove any of the components during preparing the mixed signal.
+1. **Signal Loading and Visualization**: Users can load a mid-length signal with approximately 1000 points. The application provides a graph to visualize the loaded signal.
 
-- **Additive noise:** The user can add noise to the loaded signal with custom/controllable SNR level.
+2. **Sampling**: The loaded signal can be sampled using different frequencies. Users can choose the sampling frequency, which is displayed either as the actual frequency or the normalized one based on the state of the "Actual" checkbox.
 
+3. **Signal Recovery**: After sampling, the application utilizes the sampled points to recover the original signal. A graph is provided to display the reconstructed signal.
 
+4. **Difference Visualization**: Users can compare the original signal with the reconstructed one using a third graph, which shows the difference between the two signals.
 
+5. **Signal Mixer/Composer**: The loaded signal can be sourced from a file or created in the application's signal mixer/composer. In the mixer, users can add multiple sinusoidal signals of different frequencies and magnitudes. Components can also be removed while preparing the mixed signal.
 
+6. **Noise Addition**: Users have the option to add noise to the loaded signal. The noise level can be controlled using a custom Signal-to-Noise Ratio (SNR). The application demonstrates the dependency of the noise effect on the signal frequency.
 
+7. **Real-time Processing**: Sampling and recovery are performed in real-time, instantly reflecting any changes made by the user.
+
+8. **Resizable UI**: The application's UI is designed to be easily resizable, ensuring a smooth user experience.
+
+## Installation
+
+To run Sampling_Theory Studio, follow these steps:
+
+1. Install Python (version 3.7 or higher) on your system.
+2. Clone the repository `sampling_theory_studio` from [GitHub](https://github.com/team4/sampling_theory_studio).
+3. Launch the application by running the `task2.py` file.
+
+## Usage
+
+Upon launching Sampling_Theory Studio, you will be presented with a user-friendly interface that allows you to interact with the various features of the application. Load your signal, adjust the sampling frequency, add/remove components in the signal mixer, and explore the visualizations of the original signal, reconstructed signal, and difference between them.
 
